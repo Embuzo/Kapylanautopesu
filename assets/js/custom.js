@@ -1,4 +1,22 @@
 (function($) {
+    'use strict';
+
+    // Function to load external CSS file
+    function loadCSS(url) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.appendChild(link);
+    }
+
+    // Load Font Awesome stylesheet
+    loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    // Your existing JavaScript code
+    // Mean Menu, Sticky, Go To Top JS, etc.
+})(jQuery);
+
+(function($) {
 	'use strict';
 
 	// Mean Menu
@@ -97,8 +115,8 @@
         nav: true,
         dots: true,
         navText:[
-            '<i class="flaticon-back"></i>',
-            '<i class="flaticon-next"></i>'
+            '<i class="fa fa-caret-left"></i>',
+            '<i class="fa fa-caret-right"></i>'
         ],
         responsive:{
             0:{
@@ -181,8 +199,8 @@
         items: 1,
         dots: false,
         navText:[
-            '<i class="flaticon-back"></i>',
-            '<i class="flaticon-next"></i>'
+            '<i class="fa fa-caret-left"></i>',
+            '<i class="fa fa-caret-right"></i>'
         ],
         responsive:{
             0:{
